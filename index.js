@@ -7,7 +7,7 @@ const commonPasswords = [
 
 function checkPasswordStrength(password) {
     if (commonPasswords.includes(password.toLowerCase())) {
-        return "Very Weak (Common Password)";
+        return "Weak";  // Common password, considered very weak
     }
     
     let score = 0;
@@ -16,15 +16,14 @@ function checkPasswordStrength(password) {
     if (/[a-z]/.test(password)) score++;
     if (/[0-9]/.test(password)) score++;
     if (/[^A-Za-z0-9]/.test(password)) score++;
-    
-    if (score <= 2) return "Weak";
-    if (score === 3) return "Moderate";
-    if (score === 4) return "Strong";
-    return "Very Strong";
+
+    if (score <= 2) return "Weak";    // Weak password
+    if (score === 3) return "Moderate";  // Moderate password
+    return "Strong";  // Strong password
 }
 
 module.exports = checkPasswordStrength;
 
 // Usage Example:
 // const checkPasswordStrength = require('./index');
-// console.log(checkPasswordStrength("P@ssw0rd123"));
+// console.log(checkPasswordStrength("P@ssw0rd123")); // Output: Strong
