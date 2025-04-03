@@ -1,0 +1,19 @@
+{
+  "name": "password-strength-checker",
+  "version": "1.0.0",
+  "description": "A simple password strength checker that returns 'Strong', 'Moderate', or 'Weak'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "password",
+    "strength",
+    "checker",
+    "security",
+    "password-strength"
+  ],
+  "author": "Aaron",
+  "license": "MIT"
+}
+
