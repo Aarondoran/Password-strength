@@ -22,8 +22,7 @@ npm install password-strength-checker
 ## Usage
 
 Import the module in your Node.js application:
-```const checkPasswordStrength = require('password-strength-checker');
-```
+```const checkPasswordStrength = require('password-strength-checker');```
 
 Call the function with the password you want to check:
 ```console.log(checkPasswordStrength('P@ssw0rd123')); // Output: Strong```
